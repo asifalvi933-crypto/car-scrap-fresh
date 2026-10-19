@@ -1,180 +1,204 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-export default function CarScrapBlogHome() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+export default function Home() {
+  const [activeCategory, setActiveCategory] = useState('All')
+  const [searchQuery, setSearchQuery] = useState('')
 
-  // Direct WhatsApp API Link Integration
-  const whatsappNumber = "916395948240"; 
-  const defaultWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent("Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.")}`;
+  const whatsappNumber = '916395948240'
 
-  const categories = ['All', 'Engine & Transmission', 'Body Parts', 'Lights & Electrical', 'Suspension'];
+  const categories = ['All', 'Engine & Transmission', 'Body Parts', 'Lights & Electrical', 'Suspension']
 
-  const blogPosts = [
+  const products = [
     {
       id: 1,
-      title: "Original Maruti Swift Dzire Engine (2018-2022) - Testing Video Included",
-      category: "Engine & Transmission",
-      price: "₹24,500",
-      location: "Moradabad / Delhi NCR Delivery",
-      date: "Oct 2026",
-      condition: "Tested - 85% Life Remaining",
-      image: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=800&auto=format&fit=crop&q=60",
-      desc: "Verified Maruti Swift Dzire engine scrap part. Fully tested with video proof before delivery in Moradabad & Delhi NCR."
+      title: 'Maruti Swift Dzire K12 Petrol Engine Assembly',
+      category: 'Engine & Transmission',
+      location: 'Mayapuri Industrial Area, Delhi',
+      date: 'Oct 2026',
+      price: '₹18,500',
+      condition: '42,000 km Tested',
+      videoProof: true,
+      image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&auto=format&fit=crop&q=60',
+      description: '100% Original tested engine with complete wiring and compression test video proof.'
     },
     {
       id: 2,
-      title: "Mayapuri vs Moradabad Auto Scrap Market: Where to Buy Genuine i20 Spare Parts?",
-      category: "Body Parts",
-      price: "Price Analysis Guide",
-      location: "Mayapuri & UP North",
-      date: "Oct 2026",
-      condition: "Buying Guide & Direct Quotes",
-      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=60",
-      desc: "Complete price comparison between Delhi Mayapuri and Moradabad scrap hubs for bumpers, headlights, and doors."
+      title: 'Hyundai i20 Elite Front Bumper & Chrome Grille Assembly',
+      category: 'Body Parts',
+      location: 'Sikandrabad & Moradabad Hub',
+      date: 'Oct 2026',
+      price: '₹4,200',
+      condition: 'Original OEM Paint',
+      videoProof: true,
+      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=60',
+      description: 'Zero clip damage, minor surface scratches. Original factory paint.'
     },
     {
       id: 3,
-      title: "Hyundai Creta Original LED Headlight Pair (Scratchless Original Glass)",
-      category: "Lights & Electrical",
-      price: "₹8,200",
-      location: "Moradabad Warehouse",
-      date: "Oct 2026",
-      condition: "Like New - 100% Genuine",
-      image: "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&auto=format&fit=crop&q=60",
-      desc: "Original factory fitted LED headlight assembly. Tested matrix bulbs and zero clip damages."
+      title: 'Hyundai Creta Original LED Headlight Pair',
+      category: 'Lights & Electrical',
+      location: 'Moradabad Warehouse',
+      date: 'Oct 2026',
+      price: '₹9,800',
+      condition: 'Scratchless Glass',
+      videoProof: true,
+      image: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&auto=format&fit=crop&q=60',
+      description: 'Original factory fitted LED headlight assembly. Tested matrix bulbs.'
     }
-  ];
+  ]
 
-  const filteredPosts = selectedCategory === 'All' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+  const filteredProducts = products.filter(product => {
+    const matchesCategory = activeCategory === 'All' || product.category === activeCategory
+    const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          product.location.toLowerCase().includes(searchQuery.toLowerCase())
+    return matchesCategory && matchesSearch
+  })
+
+  const getWhatsAppLink = (itemTitle?: string) => {
+    const text = itemTitle 
+      ? `Hi Car Scrap Hub, I want to inquire about: ${itemTitle}` 
+      : 'Hi Car Scrap Hub, I want to inquire about second-hand auto spare parts.'
+    return `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(text)}`
+  }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
+    <div style={{ backgroundColor: '#0f172a', color: '#f8fafc', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      
       {/* Top Banner */}
-      <div className="bg-gradient-to-r from-amber-600 to-orange-600 text-slate-950 text-xs sm:text-sm font-bold py-2 px-4 text-center">
-        ⚡ 100% Tested Second Hand Parts with Video Proof & Cash on Delivery Available in NCR / UP!
+      <div style={{ backgroundColor: '#1e293b', padding: '8px 16px', textAlign: 'center', fontSize: '14px', borderBottom: '1px solid #334155', color: '#38bdf8' }}>
+        ⚡ 100% Tested Second-Hand Parts with Video Proof & Cash on Delivery Available in NCR / UP
       </div>
 
       {/* Header */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div>
-            <h1 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-              <span className="text-amber-500">CAR SCRAP</span> HUB
-            </h1>
-            <p className="text-xs text-slate-400">Verified Auto Parts Marketplace</p>
-          </div>
-          <a 
-            href={defaultWhatsAppUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-emerald-900/30 flex items-center gap-2 transition-all hover:scale-105"
-          >
-            <span>💬</span> Instant WhatsApp Quote
-          </a>
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 32px', backgroundColor: '#0f172a', borderBottom: '1px solid #1e293b', sticky: 'top' }}>
+        <div>
+          <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: '#38bdf8', margin: 0 }}>CAR SCRAP HUB</h1>
+          <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Verified Auto Parts Marketplace</p>
         </div>
+        <a 
+          href={getWhatsAppLink()} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ backgroundColor: '#22c55e', color: '#ffffff', padding: '10px 20px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px' }}
+        >
+          <span>💬 Instant WhatsApp Quote</span>
+        </a>
       </header>
 
-      {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-8">
-        {/* Hero Banner */}
-        <section className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 mb-10 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-transparent pointer-events-none"></div>
-          <p className="text-amber-400 font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">India's Most Trusted Auto Scrap Hub</p>
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-white mb-4 leading-tight">
-            Buy Original Second-Hand Parts <br className="hidden sm:inline" /> With Video Verification Before Payment
-          </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base mb-6">
-            Watch actual part testing videos, check genuine prices, and get original Swift, i20, Creta, and Scorpio parts delivered directly to your garage.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 text-xs sm:text-sm text-slate-300">
-            <span className="bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg">✅ 100% Original OEM Parts</span>
-            <span className="bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg">🎥 Video Testing Proof</span>
-            <span className="bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg">🚚 Express NCR & UP Delivery</span>
-          </div>
-        </section>
+      {/* Hero Section */}
+      <div style={{ textAlign: 'center', padding: '40px 20px', backgroundColor: '#1e293b' }}>
+        <h2 style={{ fontSize: '32px', fontWeight: '800', marginBottom: '12px' }}>
+          Buy Original Second-Hand Parts With Video Verification Before Payment
+        </h2>
+        <p style={{ color: '#94a3b8', maxWidth: '600px', margin: '0 auto 24px auto', fontSize: '16px' }}>
+          Watch actual part testing videos, check genuine prices, and get original Swift, i20, Creta, and Scorpio parts delivered directly to your garage.
+        </p>
 
-        {/* Category Filters */}
-        <section className="mb-8 overflow-x-auto pb-2">
-          <div className="flex gap-2 min-w-max">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
-                  selectedCategory === cat
-                    ? 'bg-amber-500 text-slate-950 font-bold shadow-md shadow-amber-500/20'
-                    : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
-                }`}
+        {/* Search Bar */}
+        <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+          <input 
+            type="text" 
+            placeholder="Search parts (e.g. Swift Engine, Creta Headlight)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            style={{ width: '100%', padding: '14px 20px', borderRadius: '10px', border: '1px solid #334155', backgroundColor: '#0f172a', color: '#ffffff', fontSize: '15px', outline: 'none' }}
+          />
+        </div>
+      </div>
+
+      {/* Trust Badges */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', padding: '20px', borderBottom: '1px solid #1e293b', fontSize: '14px', color: '#cbd5e1' }}>
+        <span>✅ 100% Original OEM Parts</span>
+        <span>🎥 Video Testing Proof</span>
+        <span>🚚 Express NCR & UP Delivery</span>
+      </div>
+
+      {/* Category Filters */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', padding: '24px 16px' }}>
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setActiveCategory(cat)}
+            style={{
+              padding: '8px 18px',
+              borderRadius: '20px',
+              border: 'none',
+              backgroundColor: activeCategory === cat ? '#38bdf8' : '#1e293b',
+              color: activeCategory === cat ? '#0f172a' : '#f8fafc',
+              fontWeight: '600',
+              cursor: 'pointer',
+              fontSize: '14px',
+              transition: 'all 0.2s'
+            }}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Product Grid */}
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px 60px 20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+        {filteredProducts.map((product) => (
+          <div 
+            key={product.id} 
+            style={{ backgroundColor: '#1e293b', borderRadius: '16px', overflow: 'hidden', border: '1px solid #334155', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}
+          >
+            <div>
+              <div style={{ position: 'relative', height: '200px' }}>
+                <img 
+                  src={product.image} 
+                  alt={product.title} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                />
+                <span style={{ position: 'absolute', top: '12px', left: '12px', backgroundColor: 'rgba(15, 23, 42, 0.85)', color: '#38bdf8', padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>
+                  📍 {product.location}
+                </span>
+                {product.videoProof && (
+                  <span style={{ position: 'absolute', top: '12px', right: '12px', backgroundColor: '#ef4444', color: '#ffffff', padding: '4px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>
+                    ▶ Video Tested
+                  </span>
+                )}
+              </div>
+
+              <div style={{ padding: '20px' }}>
+                <div style={{ fontSize: '12px', color: '#38bdf8', fontWeight: 'bold', marginBottom: '6px' }}>
+                  {product.category} • {product.condition}
+                </div>
+                <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px', lineHeight: '1.4' }}>
+                  {product.title}
+                </h3>
+                <p style={{ fontSize: '14px', color: '#94a3b8', marginBottom: '16px', lineHeight: '1.5' }}>
+                  {product.description}
+                </p>
+              </div>
+            </div>
+
+            <div style={{ padding: '0 20px 20px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid #334155', paddingTop: '16px' }}>
+              <div>
+                <span style={{ fontSize: '12px', color: '#94a3b8', display: 'block' }}>Expected Price</span>
+                <span style={{ fontSize: '22px', fontWeight: '800', color: '#22c55e' }}>{product.price}</span>
+              </div>
+              <a 
+                href={getWhatsAppLink(product.title)} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ backgroundColor: '#22c55e', color: '#ffffff', padding: '10px 16px', borderRadius: '10px', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px' }}
               >
-                {cat}
-              </button>
-            ))}
+                Inquire on WhatsApp
+              </a>
+            </div>
           </div>
-        </section>
-
-        {/* Product Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredPosts.map((post) => {
-            const itemWhatsAppUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(`Hi, I am interested in: ${post.title} (${post.price}). Is it available?`)}`;
-            return (
-              <article key={post.id} className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between">
-                <div>
-                  <div className="relative h-48 bg-slate-950 overflow-hidden">
-                    <img 
-                      src={post.image} 
-                      alt={post.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
-                    />
-                    <span className="absolute top-3 left-3 bg-amber-500 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md">
-                      {post.category}
-                    </span>
-                    <span className="absolute bottom-3 right-3 bg-slate-950/90 text-amber-400 font-bold text-xs px-2.5 py-1 rounded-md border border-amber-500/30">
-                      {post.price}
-                    </span>
-                  </div>
-                  <div className="p-5">
-                    <div className="flex justify-between items-center text-xs text-slate-400 mb-2">
-                      <span>📍 {post.location}</span>
-                      <span>{post.date}</span>
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-100 mb-2 leading-snug hover:text-amber-400 cursor-pointer">
-                      {post.title}
-                    </h3>
-                    <p className="text-slate-400 text-xs sm:text-sm line-clamp-3 mb-4">
-                      {post.desc}
-                    </p>
-                    <div className="text-xs text-slate-300 font-medium bg-slate-950/50 p-2.5 rounded-lg border border-slate-800/80 mb-4">
-                      🔧 Condition: <span className="text-amber-400">{post.condition}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-5 pt-0">
-                  <a
-                    href={itemWhatsAppUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-600 hover:text-white text-center py-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2"
-                  >
-                    <span>💬</span> Inquire Price on WhatsApp
-                  </a>
-                </div>
-              </article>
-            );
-          })}
-        </section>
-      </main>
+        ))}
+      </div>
 
       {/* Footer */}
-      <footer className="border-t border-slate-800 bg-slate-900 mt-16 py-8">
-        <div className="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
-          <p>© 2026 Car Scrap Hub. Premium Second Hand Spare Parts Marketplace.</p>
-        </div>
+      <footer style={{ borderTop: '1px solid #1e293b', padding: '30px 20px', textAlign: 'center', color: '#64748b', fontSize: '14px' }}>
+        <p>© 2026 Car Scrap Hub. Premium Second Hand Spare Parts Marketplace.</p>
+        <p style={{ fontSize: '12px', marginTop: '6px' }}>Moradabad • Mayapuri Delhi NCR • Sikandrabad</p>
       </footer>
+
     </div>
-  );
+  )
 }
