@@ -72,7 +72,7 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 32px', backgroundColor: '#0f172a', borderBottom: '1px solid #1e293b', sticky: 'top' }}>
+      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 32px', backgroundColor: '#0f172a', borderBottom: '1px solid #1e293b', position: 'sticky', top: 0, zIndex: 50 }}>
         <div>
           <h1 style={{ fontSize: '24px', fontWeight: 'bold', color: '#38bdf8', margin: 0 }}>CAR SCRAP HUB</h1>
           <p style={{ fontSize: '12px', color: '#94a3b8', margin: 0 }}>Verified Auto Parts Marketplace</p>
