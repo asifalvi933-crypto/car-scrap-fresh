@@ -2,71 +2,71 @@ import Link from 'next/link';
 
 export default function ScorpioBoleroPartsPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white p-6">
-      <header className="max-w-4xl mx-auto py-6 border-b border-slate-800 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-amber-500">
+    <main style={{ minHeight: '100vh', backgroundColor: '#020617', color: '#ffffff', padding: '24px', fontFamily: 'sans-serif' }}>
+      <header style={{ maxWidth: '56rem', margin: '0 auto', padding: '24px 0', borderBottom: '1px solid #1e293b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Link href="/" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#f59e0b', textDecoration: 'none' }}>
           ← CAR SCRAP HUB
         </Link>
         <a 
           href="https://wa.me/916395948240?text=I%20need%20Scorpio%20Bolero%20Engine%20Parts" 
-          className="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg font-medium text-sm"
+          style={{ backgroundColor: '#16a34a', color: '#ffffff', padding: '8px 16px', borderRadius: '8px', fontWeight: '500', fontSize: '0.875rem', textDecoration: 'none' }}
         >
           WhatsApp Verified Parts
         </a>
       </header>
 
-      <article className="max-w-4xl mx-auto py-8">
-        <span className="bg-amber-500/20 text-amber-400 text-xs px-3 py-1 rounded-full font-semibold uppercase">
+      <article style={{ maxWidth: '56rem', margin: '0 auto', padding: '32px 0' }}>
+        <span style={{ backgroundColor: 'rgba(245, 158, 11, 0.2)', color: '#fbbf24', fontSize: '0.75rem', padding: '4px 12px', borderRadius: '9999px', fontWeight: '600', textTransform: 'uppercase' }}>
           Mayapuri & Moradabad Scrap Yard Prices
         </span>
-        <h1 className="text-3xl sm:text-5xl font-extrabold my-4 text-white">
+        <h1 style={{ fontSize: '2rem', fontWeight: '800', margin: '16px 0', color: '#ffffff', lineHeight: '1.2' }}>
           Mahindra Scorpio & Bolero Second-Hand Engine & Scrap Parts Guide
         </h1>
-        <p className="text-slate-400 text-base mb-8">
+        <p style={{ color: '#94a3b8', fontSize: '1rem', marginBottom: '32px' }}>
           Get original mHawk 2.2L & m2DiCR engine assemblies with live video compression test proof before dispatch to Delhi-NCR & Moradabad.
         </p>
 
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4 text-amber-400">Scrap Yard Market Price List</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm text-slate-300">
-              <thead className="bg-slate-800 text-amber-400 uppercase text-xs">
-                <tr>
-                  <th className="p-3">Part Name</th>
-                  <th className="p-3">Condition</th>
-                  <th className="p-3">Approx Price (₹)</th>
+        <div style={{ backgroundColor: '#0f172a', border: '1px solid #1e293b', borderRadius: '16px', padding: '24px', marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '16px', color: '#fbbf24' }}>Scrap Yard Market Price List</h2>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', textAlign: 'left', fontSize: '0.875rem', color: '#cbd5e1', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ backgroundColor: '#1e293b', color: '#fbbf24', textTransform: 'uppercase', fontSize: '0.75rem' }}>
+                  <th style={{ padding: '12px' }}>Part Name</th>
+                  <th style={{ padding: '12px' }}>Condition</th>
+                  <th style={{ padding: '12px' }}>Approx Price (₹)</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800">
-                <tr>
-                  <td className="p-3">Scorpio mHawk 2.2L Half Engine</td>
-                  <td className="p-3">Tested / Video Proof</td>
-                  <td className="p-3 font-semibold text-green-400">₹28,000 - ₹38,000</td>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #1e293b' }}>
+                  <td style={{ padding: '12px' }}>Scorpio mHawk 2.2L Half Engine</td>
+                  <td style={{ padding: '12px' }}>Tested / Video Proof</td>
+                  <td style={{ padding: '12px', fontWeight: '600', color: '#4ade80' }}>₹28,000 - ₹38,000</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1e293b' }}>
+                  <td style={{ padding: '12px' }}>Bolero m2DiCR Full Engine Block</td>
+                  <td style={{ padding: '12px' }}>Video Verified</td>
+                  <td style={{ padding: '12px', fontWeight: '600', color: '#4ade80' }}>₹22,000 - ₹30,000</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1e293b' }}>
+                  <td style={{ padding: '12px' }}>Scorpio / Bolero Gearbox (5-Speed)</td>
+                  <td style={{ padding: '12px' }}>Original OEM</td>
+                  <td style={{ padding: '12px', fontWeight: '600', color: '#4ade80' }}>₹12,000 - ₹18,000</td>
                 </tr>
                 <tr>
-                  <td className="p-3">Bolero m2DiCR Full Engine Block</td>
-                  <td className="p-3">Video Verified</td>
-                  <td className="p-3 font-semibold text-green-400">₹22,000 - ₹30,000</td>
-                </tr>
-                <tr>
-                  <td className="p-3">Scorpio / Bolero Gearbox (5-Speed)</td>
-                  <td className="p-3">Original OEM</td>
-                  <td className="p-3 font-semibold text-green-400">₹12,000 - ₹18,000</td>
-                </tr>
-                <tr>
-                  <td className="p-3">Bosch Diesel Injectors (Set of 4)</td>
-                  <td className="p-3">Calibrated / Tested</td>
-                  <td className="p-3 font-semibold text-green-400">₹14,000 - ₹18,000</td>
+                  <td style={{ padding: '12px' }}>Bosch Diesel Injectors (Set of 4)</td>
+                  <td style={{ padding: '12px' }}>Calibrated / Tested</td>
+                  <td style={{ padding: '12px', fontWeight: '600', color: '#4ade80' }}>₹14,000 - ₹18,000</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <div className="text-center my-10">
+        <div style={{ textAlign: 'center', margin: '40px 0' }}>
           <a 
             href="https://wa.me/916395948240?text=I%20want%20to%20buy%20Scorpio/Bolero%20parts" 
-            className="inline-block bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all"
+            style={{ display: 'inline-block', backgroundColor: '#16a34a', color: '#ffffff', fontWeight: 'bold', padding: '16px 32px', borderRadius: '12px', fontSize: '1.125rem', textDecoration: 'none' }}
           >
             Check Live Video Stock On WhatsApp →
           </a>
