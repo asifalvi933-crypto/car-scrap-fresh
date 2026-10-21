@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     'Fortuner scrap spare parts',
   ],
   verification: {
-    google: 'tKlBFs9kdPBeJvSkWd07gRh6x1Tdxs_LhyT0QwAwXSM',
+    google: 'x6lcLJaRCxYS1JV',
   },
 }
 
