@@ -1,8 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Second Hand Maruti Swift Spare Parts & Engine Price | Car Scrap Hub',
-  description: 'Buy 100% original tested Maruti Swift second-hand parts. Tested Engines, Gearbox & Bumpers with live video testing.',
+  title: 'Second Hand Maruti Swift Spare Parts, Engine Price | Car Scrap Hub',
+  description: 'Buy 100% original tested Maruti Swift second-hand scrap parts. Tested Engines, Gearbox, Doors & Suspension with live video proof.',
+  keywords: [
+    'Maruti Swift scrap parts price',
+    'Swift diesel engine second hand',
+    'Maruti Swift gearbox scrap market',
+    'Swift second hand spare parts Delhi NCR UP'
+  ],
   alternates: {
     canonical: 'https://carscraphub.in/scrap-parts/maruti-swift',
   },
@@ -12,9 +18,9 @@ export default function SwiftScrapPage() {
   const jsonLd = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
-    'name': 'Second Hand Maruti Swift Original Tested Parts & Engine',
+    'name': 'Second Hand Maruti Swift Original Tested Scrap Parts',
     'image': 'https://carscraphub.in/images/maruti-swift-part.jpg',
-    'description': 'Original scrap yard tested Maruti Swift spare parts including K-Series engines, gearboxes, headlights, and bumpers with video proof.',
+    'description': 'Original scrap yard tested Maruti Swift spare parts including K-Series petrol engines, DDiS diesel engines, gearboxes, and body panels with video proof.',
     'brand': {
       '@type': 'Brand',
       'name': 'Maruti Suzuki',
@@ -23,7 +29,7 @@ export default function SwiftScrapPage() {
       '@type': 'AggregateOffer',
       'priceCurrency': 'INR',
       'lowPrice': '1500',
-      'highPrice': '35000',
+      'highPrice': '32000',
       'offerCount': '50',
       'itemCondition': 'https://schema.org/UsedCondition',
       'availability': 'https://schema.org/InStock',
@@ -41,7 +47,7 @@ export default function SwiftScrapPage() {
         
         {/* Top Announcement Bar */}
         <div style={{ backgroundColor: '#eab308', color: '#000000', textAlign: 'center', fontWeight: 'bold', fontSize: '14px', padding: '10px 16px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          ⚡ 100% Tested OEM Parts | Video Verification Before Payment | Fast NCR & UP Delivery
+          ⚡ 100% Tested OEM Parts | Swift Petrol & Diesel Stock Ready | Live Video Testing
         </div>
 
         <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '20px 16px' }}>
@@ -51,61 +57,50 @@ export default function SwiftScrapPage() {
             <a href="/" style={{ color: '#2563eb', textDecoration: 'none' }}>Home</a> &gt; <a href="/scrap-parts" style={{ color: '#2563eb', textDecoration: 'none' }}>Scrap Parts</a> &gt; <span style={{ color: '#0f172a', fontWeight: '600' }}>Maruti Swift</span>
           </nav>
 
-          {/* Hero Heading Section */}
+          {/* Hero Section */}
           <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '24px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', marginBottom: '24px', border: '1px solid #e2e8f0' }}>
             <span style={{ backgroundColor: '#dcfce7', color: '#166534', fontSize: '12px', fontWeight: 'bold', padding: '4px 10px', borderRadius: '20px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
               ✓ Verified Dismantling Yard Stock
             </span>
             
-            <h1 style={{ fontSize: '28px', fontWeight: '800', color: '#0f172a', marginTop: '12px', marginBottom: '12px', lineHeight: '1.2' }}>
-              Original Second-Hand Maruti Swift Scrap Parts & Engine
+            <h1 style={{ fontSize: '26px', fontWeight: '800', color: '#0f172a', marginTop: '12px', marginBottom: '12px', lineHeight: '1.2' }}>
+              Original Second-Hand Maruti Swift Scrap Parts
             </h1>
+
+            {/* REAL PRODUCT/CAR IMAGE BLOCK */}
+            <div style={{ width: '100%', height: '220px', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', border: '1px solid #e2e8f0' }}>
+              <img 
+                src="https://images.unsplash.com/photo-1541348263662-e082662d82da?auto=format&fit=crop&w=800&q=80" 
+                alt="Maruti Swift Second Hand Tested Spare Parts" 
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
             
-            <p style={{ fontSize: '16px', color: '#475569', lineHeight: '1.5', marginBottom: '20px' }}>
-              Get tested OEM Maruti Swift spare parts directly from scrap yards. Save up to 70% compared to showroom prices with 100% video testing guarantee before dispatch.
+            <p style={{ fontSize: '15px', color: '#475569', lineHeight: '1.5', marginBottom: '20px' }}>
+              Get tested OEM second-hand parts for <strong>Maruti Swift (Petrol / Diesel)</strong>. Save up to 70% with 100% live video compression & working verification before payment.
             </p>
 
-            {/* Direct WhatsApp Call To Action Button */}
             <a
               href="https://wa.me/916395948240?text=Hi,%20I%20need%20parts%20for%20Maruti%20Swift"
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'inline-block', backgroundColor: '#25d366', color: '#ffffff', fontWeight: 'bold', fontSize: '16px', padding: '14px 24px', borderRadius: '50px', textDecoration: 'none', boxShadow: '0 4px 12px rgba(37, 211, 102, 0.4)' }}
             >
-              💬 Check Part Availability & Price on WhatsApp
+              💬 Check Swift Parts & Price on WhatsApp
             </a>
           </div>
 
-          {/* Trust Badges Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginBottom: '24px' }}>
-            <div style={{ backgroundColor: '#ffffff', padding: '16px', borderRadius: '12px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', marginBottom: '4px' }}>🔧</div>
-              <div style={{ fontWeight: 'bold', fontSize: '14px' }}>100% OEM Original</div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>Genune Factory Parts</div>
-            </div>
-            <div style={{ backgroundColor: '#ffffff', padding: '16px', borderRadius: '12px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', marginBottom: '4px' }}>📹</div>
-              <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Live Video Proof</div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>Video test before payment</div>
-            </div>
-            <div style={{ backgroundColor: '#ffffff', padding: '16px', borderRadius: '12px', border: '1px solid #e2e8f0', textAlign: 'center' }}>
-              <div style={{ fontSize: '24px', marginBottom: '4px' }}>🚚</div>
-              <div style={{ fontWeight: 'bold', fontSize: '14px' }}>Doorstep Shipping</div>
-              <div style={{ fontSize: '12px', color: '#64748b' }}>Fast Delhi NCR & UP delivery</div>
-            </div>
-          </div>
-
-          {/* Beautiful Price List Table Card */}
+          {/* Price Table Card */}
           <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '20px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', border: '1px solid #e2e8f0', marginBottom: '32px' }}>
             <h2 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '16px', color: '#0f172a' }}>
-              Maruti Swift Spare Parts Price List
+              Maruti Swift Scrap Parts Price List
             </h2>
             
             <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', textOverflow: 'ellipsis' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ backgroundColor: '#0f172a', color: '#ffffff', textAlign: 'left', fontSize: '14px' }}>
-                    <th style={{ padding: '12px 16px', borderRadius: '8px 0 0 8px' }}>Spare Part</th>
+                    <th style={{ padding: '12px 16px', borderRadius: '8px 0 0 8px' }}>Spare Part Name</th>
                     <th style={{ padding: '12px 16px' }}>Condition / Quality</th>
                     <th style={{ padding: '12px 16px' }}>Estimated Price</th>
                     <th style={{ padding: '12px 16px', borderRadius: '0 8px 8px 0' }}>Action</th>
@@ -113,44 +108,16 @@ export default function SwiftScrapPage() {
                 </thead>
                 <tbody style={{ fontSize: '14px' }}>
                   <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
-                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Swift K12 Petrol / DDiS Diesel Engine</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <span style={{ backgroundColor: '#dcfce7', color: '#166534', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>Compression Tested</span>
-                    </td>
+                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Swift DDiS Diesel / K12 Petrol Engine Assembly</td>
+                    <td style={{ padding: '14px 16px' }}><span style={{ backgroundColor: '#dcfce7', color: '#166534', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>Tested Compression</span></td>
                     <td style={{ padding: '14px 16px', fontWeight: 'bold', color: '#0f172a' }}>₹18,000 – ₹32,000</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <a href="https://wa.me/916395948240?text=I%20need%20Swift%20Engine" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Request Video</a>
-                    </td>
+                    <td style={{ padding: '14px 16px' }}><a href="https://wa.me/916395948240?text=I%20need%20Swift%20Engine" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Get Video Test</a></td>
                   </tr>
                   <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
-                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Manual / AMT Gearbox Box</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <span style={{ backgroundColor: '#dcfce7', color: '#166534', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>Smooth Shift Tested</span>
-                    </td>
-                    <td style={{ padding: '14px 16px', fontWeight: 'bold', color: '#0f172a' }}>₹8,000 – ₹14,000</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <a href="https://wa.me/916395948240?text=I%20need%20Swift%20Gearbox" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Get Quote</a>
-                    </td>
-                  </tr>
-                  <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
-                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Original Front & Rear Bumpers</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <span style={{ backgroundColor: '#dbeafe', color: '#1e40af', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>OEM Scratchless</span>
-                    </td>
-                    <td style={{ padding: '14px 16px', fontWeight: 'bold', color: '#0f172a' }}>₹1,800 – ₹3,500</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <a href="https://wa.me/916395948240?text=I%20need%20Swift%20Bumpers" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Check Colors</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Headlight / Tail Light Pair</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <span style={{ backgroundColor: '#dbeafe', color: '#1e40af', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>Original Glass</span>
-                    </td>
-                    <td style={{ padding: '14px 16px', fontWeight: 'bold', color: '#0f172a' }}>₹1,200 – ₹2,800</td>
-                    <td style={{ padding: '14px 16px' }}>
-                      <a href="https://wa.me/916395948240?text=I%20need%20Swift%20Lights" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Order Now</a>
-                    </td>
+                    <td style={{ padding: '14px 16px', fontWeight: '600' }}>Swift Manual 5-Speed Gearbox</td>
+                    <td style={{ padding: '14px 16px' }}><span style={{ backgroundColor: '#dcfce7', color: '#166534', padding: '4px 8px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>Smooth Shift Tested</span></td>
+                    <td style={{ padding: '14px 16px', fontWeight: 'bold', color: '#0f172a' }}>₹8,000 – ₹15,000</td>
+                    <td style={{ padding: '14px 16px' }}><a href="https://wa.me/916395948240?text=I%20need%20Swift%20Gearbox" style={{ color: '#25d366', fontWeight: 'bold', textDecoration: 'none' }}>Get Quote</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -159,15 +126,9 @@ export default function SwiftScrapPage() {
 
         </main>
 
-        {/* Sticky Mobile Floating WhatsApp Button */}
         <div style={{ position: 'fixed', bottom: '16px', left: '16px', right: '16px', zIndex: 100 }}>
-          <a
-            href="https://wa.me/916395948240?text=Hi,%20I%20am%20looking%20for%20Maruti%20Swift%20Scrap%20Parts"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#25d366', color: '#ffffff', fontWeight: 'bold', fontSize: '16px', padding: '14px', borderRadius: '50px', textDecoration: 'none', boxShadow: '0 8px 20px rgba(0,0,0,0.3)' }}
-          >
-            💬 Click Here To Buy On WhatsApp
+          <a href="https://wa.me/916395948240?text=Hi,%20I%20am%20looking%20for%20Maruti%20Swift%20Scrap%20Parts" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#25d366', color: '#ffffff', fontWeight: 'bold', fontSize: '16px', padding: '14px', borderRadius: '50px', textDecoration: 'none', boxShadow: '0 8px 20px rgba(0,0,0,0.3)' }}>
+            💬 Click Here To Buy Swift Parts On WhatsApp
           </a>
         </div>
 
