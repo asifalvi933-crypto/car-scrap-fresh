@@ -61,7 +61,7 @@ export default function SwiftScrapPage() {
           {/* Action CTA Button */}
           <div className="mb-8">
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20need%20parts%20for%20Maruti%20Swift"
+              href="https://wa.me/916395948240?text=Hi,%20I%20need%20parts%20for%20Maruti%20Swift"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg text-lg"
@@ -134,7 +134,7 @@ export default function SwiftScrapPage() {
                   <td className="p-4 font-semibold">Swift K-Series / Diesel Engine Assembly</td>
                   <td className="p-4"><span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Tested Compression</span></td>
                   <td className="p-4 font-bold text-slate-900">₹18,000 – ₹32,000</td>
-                  <td className="p-4"><a href="https://wa.me/91XXXXXXXXXX?text=Need%20Swift%20Engine" className="text-green-600 font-bold hover:underline">Get Video Proof</a></td>
+                  <td className="p-4"><a href="https://wa.me/916395948240?text=Need%20Swift%20Engine" className="text-green-600 font-bold hover:underline">Get Video Proof</a></td>
                 </tr>
                 <tr>
                   <td className="p-4 font-semibold">Swift Manual / AMT Gearbox</td>
