@@ -17,83 +17,96 @@ export default function BrezzaScrapPage() {
   const whatsappNumber = "916395948240";
   const whatsappMsg = encodeURIComponent("Hello Car Scrap Hub, I need second-hand spare parts for Maruti Vitara Brezza.");
 
+  // Maruti Suzuki Parts Gallery Images (Exact Brezza / Suzuki Spare Parts)
   const partGallery = [
-    { name: "Vitara Brezza DDiS Diesel Engine", img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=400&q=80", tag: "Tested Compression" },
-    { name: "Front Bumper & LED Headlights", img: "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=400&q=80", tag: "OEM Scratchless" },
-    { name: "16-Inch Original Alloy Wheels", img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=400&q=80", tag: "Fresh Stock" },
+    { 
+      name: "Vitara Brezza DDiS Diesel Engine", 
+      img: "https://images.unsplash.com/photo-1597766353815-5e634cb19941?auto=format&fit=crop&w=500&q=80", 
+      tag: "Tested Compression" 
+    },
+    { 
+      name: "Front Bumper & Headlight Assembly", 
+      img: "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=500&q=80", 
+      tag: "OEM Scratchless" 
+    },
+    { 
+      name: "16-Inch Brezza Original Alloy Wheels", 
+      img: "https://images.unsplash.com/photo-1611821064430-0d40291d0f0d?auto=format&fit=crop&w=500&q=80", 
+      tag: "Fresh Stock" 
+    },
   ];
 
   const priceList = [
-    { name: "Vitara Brezza DDiS 200 Diesel Engine Assembly", condition: "Tested Compression", price: "₹25,000 – ₹42,000", color: "bg-green-100 text-green-800" },
-    { name: "Brezza K15B / K15C Petrol Engine Assembly", condition: "Low KM / Verified", price: "₹28,000 – ₹45,000", color: "bg-blue-100 text-blue-800" },
-    { name: "5-Speed Manual / AMT Automatic Gearbox Box", condition: "Smooth Shift Tested", price: "₹10,000 – ₹18,000", color: "bg-green-100 text-green-800" },
-    { name: "Original Front Bumper & Chrome Grille Assembly", condition: "OEM Scratchless", price: "₹3,500 – ₹6,500", color: "bg-amber-100 text-amber-800" },
-    { name: "LED Projector Headlight Set (L/R Pair)", condition: "Original Working", price: "₹5,000 – ₹9,500", color: "bg-purple-100 text-purple-800" },
-    { name: "16-Inch Original Alloy Wheels (Set of 4)", condition: "Unbent / Fresh", price: "₹12,000 – ₹18,000", color: "bg-blue-100 text-blue-800" },
+    { name: "Vitara Brezza DDiS 200 Diesel Engine Assembly", condition: "Tested Compression", price: "₹25,000 – ₹42,000", color: "#dcfce7", textColor: "#166534" },
+    { name: "Brezza K15B / K15C Petrol Engine Assembly", condition: "Low KM / Verified", price: "₹28,000 – ₹45,000", color: "#dbeafe", textColor: "#1e40af" },
+    { name: "5-Speed Manual / AMT Automatic Gearbox Box", condition: "Smooth Shift Tested", price: "₹10,000 – ₹18,000", color: "#dcfce7", textColor: "#166534" },
+    { name: "Original Front Bumper & Chrome Grille Assembly", condition: "OEM Scratchless", price: "₹3,500 – ₹6,500", color: "#fef3c7", textColor: "#92400e" },
+    { name: "LED Projector Headlight Set (L/R Pair)", condition: "Original Working", price: "₹5,000 – ₹9,500", color: "#f3e8ff", textColor: "#6b21a8" },
+    { name: "16-Inch Original Alloy Wheels (Set of 4)", condition: "Unbent / Fresh", price: "₹12,000 – ₹18,000", color: "#dbeafe", textColor: "#1e40af" },
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 pb-24 font-sans">
-      {/* Top Banner */}
-      <div className="bg-amber-400 text-slate-900 font-bold text-center text-xs md:text-sm py-2 px-3 shadow-sm">
+    <div style={{ backgroundColor: '#f8fafc', color: '#1e293b', minHeight: '100vh', paddingBottom: '100px', fontFamily: 'sans-serif' }}>
+      {/* Top Yellow Banner */}
+      <div style={{ backgroundColor: '#fbbf24', color: '#0f172a', fontWeight: 'bold', textAlign: 'center', fontSize: '13px', padding: '8px 12px' }}>
         ⚡ 100% Tested OEM Parts | Vitara Brezza Diesel & Petrol Stock Ready | Live Video Testing Before Payment
       </div>
 
-      <div className="max-w-xl mx-auto px-4 pt-4">
+      <div style={{ maxWidth: '600px', margin: '0 auto', padding: '16px' }}>
         {/* Breadcrumb */}
-        <nav className="text-xs text-slate-500 mb-4">
-          <span>Home</span> &gt; <span>Scrap Parts</span> &gt; <span className="font-semibold text-slate-700">Maruti Vitara Brezza</span>
+        <nav style={{ fontSize: '12px', color: '#64748b', marginBottom: '16px' }}>
+          <span>Home</span> &gt; <span>Scrap Parts</span> &gt; <span style={{ fontWeight: 'bold', color: '#334155' }}>Maruti Vitara Brezza</span>
         </nav>
 
         {/* Main Hero Card */}
-        <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 mb-4 text-center">
-          <div className="inline-block bg-emerald-100 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full mb-3">
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '20px', border: '1px solid #e2e8f0', textAlign: 'center', marginBottom: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+          <div style={{ display: 'inline-block', backgroundColor: '#dcfce7', color: '#166534', fontWeight: 'bold', fontSize: '12px', padding: '4px 12px', borderRadius: '9999px', marginBottom: '12px' }}>
             ✓ VERIFIED DISMANTLING YARD STOCK
           </div>
           
-          {/* Featured Header Image */}
-          <div className="relative w-full h-44 mb-4 rounded-2xl overflow-hidden bg-slate-100">
+          {/* Exact Maruti Vitara Brezza SUV Image */}
+          <div style={{ position: 'relative', width: '100%', height: '200px', borderRadius: '16px', overflow: 'hidden', backgroundColor: '#f1f5f9', marginBottom: '16px' }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80" 
-              alt="Maruti Vitara Brezza Scrap Spare Parts" 
-              className="w-full h-full object-cover"
+              src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" 
+              alt="Maruti Suzuki Vitara Brezza Scrap Parts" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <span className="absolute bottom-2 right-2 bg-slate-900/80 text-white text-[10px] px-2 py-0.5 rounded-md font-medium">
-              Stock In Yard
+            <span style={{ position: 'absolute', bottom: '8px', right: '8px', backgroundColor: 'rgba(15, 23, 42, 0.85)', color: '#ffffff', fontSize: '10px', padding: '2px 8px', borderRadius: '6px' }}>
+              Brezza Stock In Yard
             </span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight mb-3">
+          <h1 style={{ fontSize: '22px', fontWeight: '800', color: '#0f172a', lineHeight: '1.3', marginBottom: '12px' }}>
             Original Second-Hand Maruti Vitara Brezza Scrap Parts
           </h1>
-          <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-            Get tested OEM second-hand parts for <strong className="text-slate-800">Vitara Brezza (1.3L DDiS Diesel)</strong> and <strong className="text-slate-800">Petrol (K15B/K15C)</strong>. Save up to 70% compared to showroom prices with 100% live video testing guarantee before dispatch.
+          <p style={{ fontSize: '13px', color: '#475569', marginBottom: '20px', lineHeight: '1.5' }}>
+            Get tested OEM second-hand parts for <strong>Vitara Brezza (1.3L DDiS Diesel)</strong> and <strong>Petrol (K15B/K15C)</strong>. Save up to 70% compared to showroom prices with 100% live video testing guarantee before dispatch.
           </p>
           <a
             href={`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-6 py-3.5 rounded-full w-full shadow-md transition-all active:scale-95"
+            style={{ display: 'flex', alignItems: 'center', justifyCenter: 'center', gap: '8px', backgroundColor: '#10b981', color: '#ffffff', fontWeight: 'bold', fontSize: '15px', padding: '14px 20px', borderRadius: '9999px', textDecoration: 'none', boxShadow: '0 4px 12px rgba(16,185,129,0.3)', width: '100%', boxSizing: 'border-box' }}
           >
             <span>💬</span> Check Brezza Parts & Price on WhatsApp
           </a>
         </div>
 
         {/* Real Part Photos Gallery */}
-        <div className="mb-6">
-          <h2 className="text-lg font-bold text-slate-900 mb-3 px-1">
+        <div style={{ marginBottom: '20px' }}>
+          <h2 style={{ fontSize: '16px', fontWeight: 'bold', color: '#0f172a', marginBottom: '12px' }}>
             📷 Live Stock & Available Spare Parts
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
             {partGallery.map((part, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 p-2">
-                <div className="w-full h-28 bg-slate-100 rounded-xl overflow-hidden mb-2">
+              <div key={index} style={{ backgroundColor: '#ffffff', borderRadius: '16px', border: '1px solid #e2e8f0', padding: '8px', overflow: 'hidden' }}>
+                <div style={{ width: '100%', height: '90px', borderRadius: '10px', overflow: 'hidden', marginBottom: '8px' }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={part.img} alt={part.name} className="w-full h-full object-cover" />
+                  <img src={part.img} alt={part.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
-                <div className="text-xs font-bold text-slate-800 truncate mb-1">{part.name}</div>
-                <span className="inline-block bg-emerald-100 text-emerald-800 font-semibold text-[10px] px-2 py-0.5 rounded-md">
+                <div style={{ fontSize: '11px', fontWeight: 'bold', color: '#1e293b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{part.name}</div>
+                <span style={{ display: 'inline-block', backgroundColor: '#dcfce7', color: '#166534', fontSize: '9px', fontWeight: '600', padding: '2px 6px', borderRadius: '4px', marginTop: '4px' }}>
                   {part.tag}
                 </span>
               </div>
@@ -102,49 +115,49 @@ export default function BrezzaScrapPage() {
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="space-y-3 mb-6">
-          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
-            <div className="text-2xl mb-1">🚗</div>
-            <div className="font-bold text-slate-800 text-sm">Vitara Brezza All Models</div>
-            <div className="text-xs text-slate-500">LDi, VDi, ZDi, LXi, VXi, ZXi & Smart Hybrid</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+          <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '14px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+            <div style={{ fontSize: '20px' }}>🚗</div>
+            <div style={{ fontWeight: 'bold', fontSize: '13px', color: '#1e293b' }}>Vitara Brezza All Models</div>
+            <div style={{ fontSize: '11px', color: '#64748b' }}>LDi, VDi, ZDi, LXi, VXi, ZXi & Smart Hybrid</div>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
-            <div className="text-2xl mb-1">📹</div>
-            <div className="font-bold text-slate-800 text-sm">Live Video Proof</div>
-            <div className="text-xs text-slate-500">Video test & compression proof before payment</div>
+          <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '14px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+            <div style={{ fontSize: '20px' }}>📹</div>
+            <div style={{ fontWeight: 'bold', fontSize: '13px', color: '#1e293b' }}>Live Video Proof</div>
+            <div style={{ fontSize: '11px', color: '#64748b' }}>Video test & compression proof before payment</div>
           </div>
-          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
-            <div className="text-2xl mb-1">🚚</div>
-            <div className="font-bold text-slate-800 text-sm">Doorstep Shipping</div>
-            <div className="text-xs text-slate-500">Fast Delhi NCR, UP & Nationwide delivery</div>
+          <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '14px', textAlign: 'center', border: '1px solid #e2e8f0' }}>
+            <div style={{ fontSize: '20px' }}>🚚</div>
+            <div style={{ fontWeight: 'bold', fontSize: '13px', color: '#1e293b' }}>Doorstep Shipping</div>
+            <div style={{ fontSize: '11px', color: '#64748b' }}>Fast Delhi NCR, UP & Nationwide delivery</div>
           </div>
         </div>
 
         {/* Price List Table Card */}
-        <div className="bg-white rounded-3xl p-5 shadow-sm border border-slate-100">
-          <h2 className="text-xl font-bold text-slate-900 mb-4">
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '24px', padding: '16px', border: '1px solid #e2e8f0' }}>
+          <h2 style={{ fontSize: '16px', fontWeight: 'bold', color: '#0f172a', marginBottom: '12px' }}>
             Maruti Vitara Brezza Scrap Parts Price List
           </h2>
 
-          <div className="overflow-hidden rounded-xl border border-slate-100">
-            <table className="w-full text-left text-xs md:text-sm">
-              <thead className="bg-slate-900 text-white font-semibold">
+          <div style={{ overflowX: 'auto', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '12px' }}>
+              <thead style={{ backgroundColor: '#0f172a', color: '#ffffff' }}>
                 <tr>
-                  <th className="p-3">Spare Part Name</th>
-                  <th className="p-3">Condition / Quality</th>
-                  <th className="p-3 text-right">Estimated Price</th>
+                  <th style={{ padding: '10px' }}>Spare Part Name</th>
+                  <th style={{ padding: '10px' }}>Condition</th>
+                  <th style={{ padding: '10px', textAlign: 'right' }}>Price</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100">
+              <tbody>
                 {priceList.map((item, idx) => (
-                  <tr key={idx} className="hover:bg-slate-50">
-                    <td className="p-3 font-medium text-slate-800">{item.name}</td>
-                    <td className="p-3">
-                      <span className={`inline-block font-medium px-2 py-0.5 rounded-md text-[11px] ${item.color}`}>
+                  <tr key={idx} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                    <td style={{ padding: '10px', fontWeight: '500', color: '#334155' }}>{item.name}</td>
+                    <td style={{ padding: '10px' }}>
+                      <span style={{ backgroundColor: item.color, color: item.textColor, padding: '2px 6px', borderRadius: '4px', fontSize: '10px', fontWeight: 'bold' }}>
                         {item.condition}
                       </span>
                     </td>
-                    <td className="p-3 text-right font-bold text-slate-900 whitespace-nowrap">{item.price}</td>
+                    <td style={{ padding: '10px', textAlign: 'right', fontWeight: 'bold', color: '#0f172a', whiteSpace: 'nowrap' }}>{item.price}</td>
                   </tr>
                 ))}
               </tbody>
@@ -154,13 +167,13 @@ export default function BrezzaScrapPage() {
       </div>
 
       {/* Sticky Bottom Green WhatsApp Bar */}
-      <div className="fixed bottom-3 left-0 right-0 px-4 z-50">
-        <div className="max-w-xl mx-auto">
+      <div style={{ position: 'fixed', bottom: '12px', left: '0', right: '0', padding: '0 16px', zIndex: 1000 }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto' }}>
           <a
             href={`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm md:text-base py-3.5 px-6 rounded-full shadow-lg border border-emerald-400 transition-all active:scale-95"
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', backgroundColor: '#10b981', color: '#ffffff', fontWeight: 'bold', fontSize: '14px', padding: '14px 20px', borderRadius: '9999px', textDecoration: 'none', boxShadow: '0 4px 15px rgba(16,185,129,0.4)', border: '1px solid #34d399' }}
           >
             <span>💬</span> Click Here To Buy Brezza Parts On WhatsApp
           </a>
