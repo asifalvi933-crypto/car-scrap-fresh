@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
+import './globals.css' // Agar aapki global CSS file ka path alag ho toh use waisa hi rehne dein
 
 export const metadata: Metadata = {
-  title: 'Car Scrap Hub | Original Second Hand Auto Spare Parts & Engines',
-  description: 'Buy original second-hand car engines, gearboxes & body parts with live video verification before payment. Best scrap rates in Moradabad & Delhi NCR.',
+  title: 'Car Scrap Hub | Original Second Hand Auto Spare Parts & Engine Scrap',
+  description: 'Buy original second-hand car engines, gearboxes & body parts directly from scrap dealers.',
   keywords: [
     // Brand & General Scrap Keywords
     'Car Scrap Hub',
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
     'car scrap dealer near me',
     'Delhi NCR auto scrap market',
     'Moradabad car scrap yard',
-    
+
     // Maruti Suzuki Parts
     'Maruti Swift second hand parts',
     'Wagon R second hand engine',
@@ -36,18 +38,7 @@ export const metadata: Metadata = {
 
     // Tata Parts
     'Tata Tiago second hand parts',
-    'Nexon used spare parts',
-    'Harrier scrap parts',
-
-    // Honda & Toyota Parts
-    'Honda City second hand engine',
-    'Honda Amaze used parts',
-    'Toyota Innova second hand parts',
-    'Fortuner scrap spare parts',
   ],
-  verification: {
-    google: 'x6lcLJaRCxYS1JV',
-  },
 }
 
 export default function RootLayout({
@@ -57,6 +48,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-52HXQBQKSB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-52HXQBQKSB');
+          `}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   )
