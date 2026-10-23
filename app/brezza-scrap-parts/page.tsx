@@ -17,7 +17,6 @@ export default function BrezzaScrapPage() {
   const whatsappNumber = "916395948240";
   const whatsappMsg = encodeURIComponent("Hello Car Scrap Hub, I need second-hand spare parts for Maruti Vitara Brezza.");
 
-  // Real Part Photos Array (Aap public/images folder me photo rakh kar path badal sakte ho)
   const partGallery = [
     { name: "Vitara Brezza DDiS Diesel Engine", img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=400&q=80", tag: "Tested Compression" },
     { name: "Front Bumper & LED Headlights", img: "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=400&q=80", tag: "OEM Scratchless" },
@@ -46,14 +45,15 @@ export default function BrezzaScrapPage() {
           <span>Home</span> &gt; <span>Scrap Parts</span> &gt; <span className="font-semibold text-slate-700">Maruti Vitara Brezza</span>
         </nav>
 
-        {/* Main Hero Card with Main Car Photo */}
+        {/* Main Hero Card */}
         <div className="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 mb-4 text-center">
           <div className="inline-block bg-emerald-100 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full mb-3">
             ✓ VERIFIED DISMANTLING YARD STOCK
           </div>
           
-          {/* Featured Car Header Image */}
+          {/* Featured Header Image */}
           <div className="relative w-full h-44 mb-4 rounded-2xl overflow-hidden bg-slate-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600&q=80" 
               alt="Maruti Vitara Brezza Scrap Spare Parts" 
@@ -80,7 +80,7 @@ export default function BrezzaScrapPage() {
           </a>
         </div>
 
-        {/* Real Dismantled Part Photos Gallery Section */}
+        {/* Real Part Photos Gallery */}
         <div className="mb-6">
           <h2 className="text-lg font-bold text-slate-900 mb-3 px-1">
             📷 Live Stock & Available Spare Parts
@@ -89,6 +89,83 @@ export default function BrezzaScrapPage() {
             {partGallery.map((part, index) => (
               <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 p-2">
                 <div className="w-full h-28 bg-slate-100 rounded-xl overflow-hidden mb-2">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={part.img} alt={part.name} className="w-full h-full object-cover" />
                 </div>
                 <div className="text-xs font-bold text-slate-800 truncate mb-1">{part.name}</div>
+                <span className="inline-block bg-emerald-100 text-emerald-800 font-semibold text-[10px] px-2 py-0.5 rounded-md">
+                  {part.tag}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Feature Cards Grid */}
+        <div className="space-y-3 mb-6">
+          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
+            <div className="text-2xl mb-1">🚗</div>
+            <div className="font-bold text-slate-800 text-sm">Vitara Brezza All Models</div>
+            <div className="text-xs text-slate-500">LDi, VDi, ZDi, LXi, VXi, ZXi & Smart Hybrid</div>
+          </div>
+          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
+            <div className="text-2xl mb-1">📹</div>
+            <div className="font-bold text-slate-800 text-sm">Live Video Proof</div>
+            <div className="text-xs text-slate-500">Video test & compression proof before payment</div>
+          </div>
+          <div className="bg-white rounded-2xl p-4 text-center shadow-sm border border-slate-100">
+            <div className="text-2xl mb-1">🚚</div>
+            <div className="font-bold text-slate-800 text-sm">Doorstep Shipping</div>
+            <div className="text-xs text-slate-500">Fast Delhi NCR, UP & Nationwide delivery</div>
+          </div>
+        </div>
+
+        {/* Price List Table Card */}
+        <div className="bg-white rounded-3xl p-5 shadow-sm border border-slate-100">
+          <h2 className="text-xl font-bold text-slate-900 mb-4">
+            Maruti Vitara Brezza Scrap Parts Price List
+          </h2>
+
+          <div className="overflow-hidden rounded-xl border border-slate-100">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-slate-900 text-white font-semibold">
+                <tr>
+                  <th className="p-3">Spare Part Name</th>
+                  <th className="p-3">Condition / Quality</th>
+                  <th className="p-3 text-right">Estimated Price</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {priceList.map((item, idx) => (
+                  <tr key={idx} className="hover:bg-slate-50">
+                    <td className="p-3 font-medium text-slate-800">{item.name}</td>
+                    <td className="p-3">
+                      <span className={`inline-block font-medium px-2 py-0.5 rounded-md text-[11px] ${item.color}`}>
+                        {item.condition}
+                      </span>
+                    </td>
+                    <td className="p-3 text-right font-bold text-slate-900 whitespace-nowrap">{item.price}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {/* Sticky Bottom Green WhatsApp Bar */}
+      <div className="fixed bottom-3 left-0 right-0 px-4 z-50">
+        <div className="max-w-xl mx-auto">
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm md:text-base py-3.5 px-6 rounded-full shadow-lg border border-emerald-400 transition-all active:scale-95"
+          >
+            <span>💬</span> Click Here To Buy Brezza Parts On WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
