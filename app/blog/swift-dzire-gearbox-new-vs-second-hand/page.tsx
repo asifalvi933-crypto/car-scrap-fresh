@@ -93,7 +93,7 @@ export default function GearboxComparisonBlog() {
         <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '15px', border: '1px solid #e2e8f0', marginBottom: '25px', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
           <div style={{ width: '100%', backgroundColor: '#f1f5f9', borderRadius: '12px', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Image
-              src="/images/swift-dzire-gearbox-scrap.jpg"
+              src="/images/gearbox-testing-inspection.jpg"
               alt="Original Maruti Swift Dzire Second Hand Gearbox Mayapuri Scrap Market Moradabad"
               width={700}
               height={400}
@@ -182,9 +182,29 @@ export default function GearboxComparisonBlog() {
           </ul>
         </div>
 
+        {/* 9. RELATED MODELS & PARTS SECTION (SEO INTERNAL LINKING) */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '16px', padding: '20px', border: '1px solid #e2e8f0', marginBottom: '25px' }}>
+          <h3 style={{ fontSize: '16px', fontWeight: '800', color: '#0f172a', marginBottom: '12px', marginTop: 0 }}>
+            🚘 Explore Other Maruti Suzuki Scrap Spare Parts:
+          </h3>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', fontSize: '13px', alignItems: 'center' }}>
+            <Link href="/blog" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'underline' }}>
+              Maruti Swift Full Scrap Parts
+            </Link>
+            <span style={{ color: '#cbd5e1' }}>•</span>
+            <Link href="/blog" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'underline' }}>
+              Maruti Dzire Scrap Parts &amp; Casing
+            </Link>
+            <span style={{ color: '#cbd5e1' }}>•</span>
+            <Link href="/blog" style={{ color: '#2563eb', fontWeight: '600', textDecoration: 'underline' }}>
+              WagonR K-Series Engine &amp; Parts
+            </Link>
+          </div>
+        </div>
+
       </div>
 
-      {/* 9. STICKY BOTTOM BAR */}
+      {/* 10. STICKY BOTTOM BAR */}
       <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, backgroundColor: '#ffffff', borderTop: '1px solid #e2e8f0', padding: '10px 15px', zIndex: 1000, boxShadow: '0 -4px 10px rgba(0,0,0,0.05)' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', gap: '10px' }}>
           <a
