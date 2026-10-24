@@ -16,153 +16,211 @@ export const metadata: Metadata = {
 }
 
 export default function GearboxComparisonBlog() {
+  const whatsappUrl = "https://wa.me/916395948240?text=Hi%20Car%20Scrap%20Hub,%20I%20want%20to%20check%20Swift/Dzire%20gearbox%20price"
+
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8 text-gray-800 bg-white">
-      {/* Blog Heading */}
-      <h1 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 leading-tight">
-        Maruti Swift & Dzire Gearbox: New Showroom vs Original Second-Hand Comparison & Price Guide
-      </h1>
-
-      <p className="text-sm text-gray-500 mb-6">
-        Published on October 2026 | Category: Car Parts Buying Guide
-      </p>
-
-      {/* Intro Section */}
-      <p className="text-lg leading-relaxed mb-6">
-        Agar aapki <span className="font-semibold text-slate-900">Maruti Swift</span> ya <span className="font-semibold text-slate-900">Swift Dzire</span> ke gearbox mein noise, gear slipping ya hard gear shifting ki problem aa rahi hai, toh aapke dimaag mein sabse pehla sawaal yahi aata hai: <span className="font-semibold text-slate-900">&quot;Kya showroom se ₹45,000+ ka naya gearbox khareedu ya original second-hand / scrap gearbox lagau?&quot;</span>
-      </p>
-
-      {/* 🖼️ Main Featured Image Section */}
-      <div className="my-6 rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-gray-50">
-        <Image
-          src="/images/swift-dzire-gearbox-scrap.jpg"
-          alt="Original Maruti Swift Dzire Second Hand Gearbox Mayapuri Scrap Market Moradabad"
-          width={800}
-          height={450}
-          priority
-          className="w-full h-auto object-cover"
-        />
-        <p className="text-xs md:text-sm text-gray-600 text-center py-2 bg-gray-100 font-medium">
-          📸 Original Dismantled Swift/Dzire Gearbox (100% Tested at Car Scrap Hub Yard)
-        </p>
+    <div style={{ backgroundColor: '#f8fafc', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif', color: '#1e293b', paddingBottom: '90px' }}>
+      
+      {/* 1. TOP YELLOW NOTICE BANNER */}
+      <div style={{ backgroundColor: '#eab308', color: '#000000', textAlign: 'center', padding: '10px 15px', fontWeight: '700', fontSize: '13px', letterSpacing: '0.2px' }}>
+        ⚡ 100% Tested OEM Parts | Swift Dzire Stock Ready | Live Video Testing Before Dispatch
       </div>
 
-      <p className="text-base leading-relaxed mb-8">
-        Is detailed guide mein hum Showroom New Parts aur <span className="font-semibold text-slate-900">Car Scrap Hub</span> ke original dismantled second-hand gearboxes ka direct price, quality aur durability comparison karenge.
-      </p>
+      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '15px' }}>
+        
+        {/* 2. BREADCRUMBS */}
+        <nav style={{ fontSize: '13px', color: '#2563eb', marginBottom: '15px' }}>
+          <Link href="/" style={{ color: '#2563eb', textDecoration: 'none' }}>Home</Link> &gt;{' '}
+          <Link href="/blog" style={{ color: '#2563eb', textDecoration: 'none' }}>Blog</Link> &gt;{' '}
+          <span style={{ color: '#64748b' }}>Swift & Dzire Gearbox</span>
+        </nav>
 
-      {/* Quick Comparison Table */}
-      <h2 className="text-2xl font-bold mb-4 text-slate-800">
-        📊 Quick Price & Feature Comparison
-      </h2>
+        {/* 3. MAIN HERO CARD */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '24px', border: '1px solid #f1f5f9', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.05)', marginBottom: '20px' }}>
+          
+          <div style={{ display: 'inline-block', backgroundColor: '#dcfce7', color: '#15803d', padding: '4px 12px', borderRadius: '20px', fontSize: '12px', fontWeight: '700', marginBottom: '14px' }}>
+            ✓ VERIFIED DISMANTLING YARD STOCK
+          </div>
 
-      <div className="overflow-x-auto mb-8">
-        <table className="w-full text-left border-collapse border border-gray-200">
-          <thead>
-            <tr className="bg-slate-100">
-              <th className="p-3 border border-gray-200 font-semibold">Features</th>
-              <th className="p-3 border border-gray-200 font-semibold">Showroom New Gearbox</th>
-              <th className="p-3 border border-gray-200 font-semibold text-green-700">Car Scrap Hub (Original Used)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="p-3 border border-gray-200 font-medium">Estimated Price</td>
-              <td className="p-3 border border-gray-200 text-red-600 font-bold">₹42,000 - ₹55,000+</td>
-              <td className="p-3 border border-gray-200 text-green-600 font-bold">₹10,000 - ₹15,000</td>
-            </tr>
-            <tr className="bg-gray-50">
-              <td className="p-3 border border-gray-200 font-medium">Build Quality</td>
-              <td className="p-3 border border-gray-200">Original OEM</td>
-              <td className="p-3 border border-gray-200">Original Maruti OEM (Low KM Dismantled)</td>
-            </tr>
-            <tr>
-              <td className="p-3 border border-gray-200 font-medium">Availability</td>
-              <td className="p-3 border border-gray-200">7 - 14 Days Waiting</td>
-              <td className="p-3 border border-gray-200 text-green-700 font-medium">Instant Stock Available</td>
-            </tr>
-            <tr className="bg-gray-50">
-              <td className="p-3 border border-gray-200 font-medium">Live Testing Proof</td>
-              <td className="p-3 border border-gray-200">No Pre-Fit Testing</td>
-              <td className="p-3 border border-gray-200 text-green-700 font-medium">Live WhatsApp Video Call Testing</td>
-            </tr>
-            <tr>
-              <td className="p-3 border border-gray-200 font-medium">Delivery Areas</td>
-              <td className="p-3 border border-gray-200">Dealer Center Pickup</td>
-              <td className="p-3 border border-gray-200">Moradabad, Mayapuri, Delhi NCR & Nationwide</td>
-            </tr>
-          </tbody>
-        </table>
+          <h1 style={{ fontSize: '26px', fontWeight: '800', color: '#0f172a', lineHeight: '1.3', marginBottom: '12px', marginTop: 0 }}>
+            Original Second-Hand Maruti Swift & Dzire Gearbox Guide
+          </h1>
+
+          <p style={{ fontSize: '14px', color: '#475569', lineHeight: '1.6', marginBottom: '20px' }}>
+            Agar aapki Maruti Swift ya Swift Dzire ke gearbox mein noise, gear slipping ya hard shifting ki problem hai, toh showroom ke ₹45,000+ spend karne ke bajaye original scrap gearbox lagayein. Live video compression proof ke sath.
+          </p>
+
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', width: '100%', backgroundColor: '#22c55e', color: '#ffffff', textAlign: 'center', padding: '14px 20px', borderRadius: '30px', fontWeight: '700', fontSize: '15px', textDecoration: 'none', boxShadow: '0 4px 12px rgba(34, 197, 94, 0.3)', boxSizing: 'border-box' }}
+          >
+            💬 Check Swift / Dzire Gearbox Price on WhatsApp
+          </a>
+        </div>
+
+        {/* 4. FEATURE BADGES (3-CARDS GRID) */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px', marginBottom: '25px' }}>
+          
+          <div style={{ backgroundColor: '#ffffff', border: '1px solid #f1f5f9', borderRadius: '16px', padding: '16px', textAlign: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
+            <span style={{ fontSize: '24px', display: 'block', marginBottom: '6px' }}>🔧</span>
+            <div style={{ fontSize: '14px', fontWeight: '700', color: '#0f172a' }}>100% OEM Original</div>
+            <div style={{ fontSize: '12px', color: '#64748b' }}>Genuine Factory Parts</div>
+          </div>
+
+          <div style={{ backgroundColor: '#ffffff', border: '1px solid #f1f5f9', borderRadius: '16px', padding: '16px', textAlign: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
+            <span style={{ fontSize: '24px', display: 'block', marginBottom: '6px' }}>📹</span>
+            <div style={{ fontSize: '14px', fontWeight: '700', color: '#0f172a' }}>Live Video Proof</div>
+            <div style={{ fontSize: '12px', color: '#64748b' }}>Video test before payment</div>
+          </div>
+
+          <div style={{ backgroundColor: '#ffffff', border: '1px solid #f1f5f9', borderRadius: '16px', padding: '16px', textAlign: 'center', boxShadow: '0 2px 8px rgba(0,0,0,0.02)' }}>
+            <span style={{ fontSize: '24px', display: 'block', marginBottom: '6px' }}>🚚</span>
+            <div style={{ fontSize: '14px', fontWeight: '700', color: '#0f172a' }}>Doorstep Shipping</div>
+            <div style={{ fontSize: '12px', color: '#64748b' }}>Fast Delhi NCR, UP & Pan India</div>
+          </div>
+
+        </div>
+
+        {/* 5. SHARP & NON-BLURRY FEATURED IMAGE 1 */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '15px', border: '1px solid #f1f5f9', marginBottom: '25px', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
+          <div style={{ width: '100%', backgroundColor: '#f1f5f9', borderRadius: '12px', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Image
+              src="/images/swift-dzire-gearbox-scrap.jpg"
+              alt="Original Maruti Swift Dzire Second Hand Gearbox Mayapuri Scrap Market Moradabad"
+              width={700}
+              height={400}
+              priority
+              style={{ width: '100%', height: 'auto', maxHeight: '380px', objectFit: 'contain' }}
+            />
+          </div>
+          <p style={{ fontSize: '13px', color: '#475569', textAlign: 'center', marginTop: '10px', marginBottom: '0', fontWeight: '500' }}>
+            📸 Original Dismantled Swift/Dzire Gearbox (100% Tested at Yard)
+          </p>
+        </div>
+
+        {/* 6. PRICE COMPARISON TABLE CARD */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '20px', border: '1px solid #f1f5f9', boxShadow: '0 4px 20px -2px rgba(0,0,0,0.05)', marginBottom: '25px' }}>
+          
+          <h2 style={{ fontSize: '20px', fontWeight: '800', color: '#0f172a', marginBottom: '16px', marginTop: 0 }}>
+            Maruti Swift / Dzire Gearbox Price List
+          </h2>
+
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px', textAlign: 'left' }}>
+              <thead>
+                <tr style={{ backgroundColor: '#0f172a', color: '#ffffff' }}>
+                  <th style={{ padding: '12px 10px', borderRadius: '8px 0 0 0' }}>Part Name / Type</th>
+                  <th style={{ padding: '12px 10px' }}>Condition / Quality</th>
+                  <th style={{ padding: '12px 10px', borderRadius: '0 8px 0 0' }}>Estimated Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
+                  <td style={{ padding: '12px 10px', fontWeight: '700', color: '#0f172a' }}>
+                    Showroom Brand New Gearbox Assembly
+                  </td>
+                  <td style={{ padding: '12px 10px' }}>
+                    <span style={{ backgroundColor: '#fef2f2', color: '#dc2626', padding: '3px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: '700' }}>
+                      Brand New
+                    </span>
+                  </td>
+                  <td style={{ padding: '12px 10px', fontWeight: '800', color: '#dc2626' }}>
+                    ₹42,000 – ₹55,000+
+                  </td>
+                </tr>
+
+                <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
+                  <td style={{ padding: '12px 10px', fontWeight: '700', color: '#0f172a' }}>
+                    Swift/Dzire Manual (DDiS/K-Series) Gearbox
+                  </td>
+                  <td style={{ padding: '12px 10px' }}>
+                    <span style={{ backgroundColor: '#dcfce7', color: '#15803d', padding: '3px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: '700' }}>
+                      Smooth Shift Tested
+                    </span>
+                  </td>
+                  <td style={{ padding: '12px 10px', fontWeight: '800', color: '#16a34a' }}>
+                    ₹9,000 – ₹14,000
+                  </td>
+                </tr>
+
+                <tr style={{ borderBottom: '1px solid #f1f5f9' }}>
+                  <td style={{ padding: '12px 10px', fontWeight: '700', color: '#0f172a' }}>
+                    Dzire AGS / AMT Automatic Gearbox Casing Unit
+                  </td>
+                  <td style={{ padding: '12px 10px' }}>
+                    <span style={{ backgroundColor: '#dcfce7', color: '#15803d', padding: '3px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: '700' }}>
+                      Low KM Dismantled
+                    </span>
+                  </td>
+                  <td style={{ padding: '12px 10px', fontWeight: '800', color: '#16a34a' }}>
+                    ₹12,000 – ₹18,000
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style={{ padding: '12px 10px', fontWeight: '700', color: '#0f172a' }}>
+                    Swift / Dzire Engine Block & Assembly
+                  </td>
+                  <td style={{ padding: '12px 10px' }}>
+                    <span style={{ backgroundColor: '#dbeafe', color: '#1d4ed8', padding: '3px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: '700' }}>
+                      Tested Compression
+                    </span>
+                  </td>
+                  <td style={{ padding: '12px 10px', fontWeight: '800', color: '#0f172a' }}>
+                    ₹20,000 – ₹35,000
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* 7. SHARP SECONDARY IMAGE 2 */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '15px', border: '1px solid #f1f5f9', marginBottom: '25px', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
+          <div style={{ width: '100%', backgroundColor: '#f1f5f9', borderRadius: '12px', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Image
+              src="/images/gearbox-testing-inspection.jpg"
+              alt="Testing Maruti Swift Dzire Gearbox Shaft and Internal Teeth"
+              width={700}
+              height={400}
+              style={{ width: '100%', height: 'auto', maxHeight: '380px', objectFit: 'contain' }}
+            />
+          </div>
+          <p style={{ fontSize: '13px', color: '#475569', textAlign: 'center', marginTop: '10px', marginBottom: '0', fontWeight: '500' }}>
+            🛠️ Live Inspection of Gear Teeth & Shafts Before Dispatch
+          </p>
+        </div>
+
+        {/* 8. INFO / FAQ CARD */}
+        <div style={{ backgroundColor: '#ffffff', borderRadius: '20px', padding: '20px', border: '1px solid #f1f5f9', marginBottom: '25px' }}>
+          <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#0f172a', marginBottom: '12px', marginTop: 0 }}>
+            🔍 How to select the right gearbox for your Swift / Dzire?
+          </h3>
+          <ul style={{ fontSize: '14px', color: '#334155', paddingLeft: '20px', margin: 0, lineHeight: '1.7' }}>
+            <li><strong>Swift / Dzire Petrol (2005 - Present):</strong> Uses 1.2L K-Series (K12) or 1.3L G13B petrol manual/AMT gearbox.</li>
+            <li><strong>Swift / Dzire Diesel (2007 - 2020):</strong> Uses 1.3L DDiS Fiat Multijet diesel gearbox assembly.</li>
+            <li><strong>Direct Call Support:</strong> Call us on <a href="tel:6395948240" style={{ color: '#2563eb', fontWeight: '700' }}>6395948240</a> to match exact compatibility.</li>
+          </ul>
+        </div>
+
       </div>
 
-      {/* Deep Dive Section 1 */}
-      <h2 className="text-2xl font-bold mb-3 text-slate-800">
-        1. 70% Cost Savings Without Quality Compromise
-      </h2>
-      <p className="leading-relaxed mb-6">
-        Maruti Swift aur Dzire (Petrol & Diesel K-Series / DDiS) ke new showroom gearboxes standard tax aur labor costs ke sath ₹50,000 tak pahunch jate hain. <span className="font-semibold text-slate-900">Mayapuri scrap market</span> aur regional dismantling yards se hum jo gearboxes late hain, woh accident-claim ya low-kilometer running cars se nikale jate hain. Inka original internal gear teeth, synchronizer rings, aur casing 100% genuine Maruti OEM hoti hai.
-      </p>
-
-      {/* 🖼️ Secondary Image Section */}
-      <div className="my-6 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
-        <Image
-          src="/images/gearbox-testing-inspection.jpg"
-          alt="Testing Maruti Swift Dzire Gearbox Shaft and Internal Teeth"
-          width={700}
-          height={380}
-          className="w-full h-auto object-cover"
-        />
-        <p className="text-xs text-gray-500 text-center py-1 bg-gray-50">
-          🛠️ Live Inspection of Gear Shafts & Teeth Quality Before Packing
-        </p>
+      {/* 9. STICKY BOTTOM FLOATING WHATSAPP BAR (MOBILE PERFECT) */}
+      <div style={{ position: 'fixed', bottom: 0, left: 0, right: 0, backgroundColor: '#ffffff', borderTop: '1px solid #e2e8f0', padding: '10px 15px', zindex: 1000, boxShadow: '0 -4px 10px rgba(0,0,0,0.05)' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', backgroundColor: '#22c55e', color: '#ffffff', textAlign: 'center', padding: '13px', borderRadius: '30px', fontWeight: '700', fontSize: '15px', textDecoration: 'none', boxShadow: '0 4px 12px rgba(34, 197, 94, 0.4)' }}
+          >
+            💬 Click Here To Buy Swift / Dzire Parts On WhatsApp
+          </a>
+        </div>
       </div>
 
-      {/* Deep Dive Section 2 */}
-      <h2 className="text-2xl font-bold mb-3 text-slate-800">
-        2. Local Aftermarket Duplicate Parts vs Original Used Gearbox
-      </h2>
-      <p className="leading-relaxed mb-6">
-        Bohot se local mechanics saste ke chakkar mein duplicate aftermarket gear parts recommend karte hain. Unki fitting aur hardening proper nahi hoti, jisse 2-3 mahine mein gearbox noise dobara shuru ho jati hai. Usse lakh guna behtar hai ki aap original Maruti factory-assembled <span className="font-semibold text-slate-900">second hand gearbox</span> lagayein jo saalon-saal bina noise ke chalta hai.
-      </p>
-
-      {/* Deep Dive Section 3 (Trust Factor) */}
-      <div className="bg-green-50 border-l-4 border-green-600 p-5 mb-8 rounded-r-lg shadow-sm">
-        <h3 className="text-xl font-bold text-green-900 mb-2 flex items-center gap-2">
-          <span>🤝</span> Zero-Risk Guarantee: Live Video Testing Before Payment
-        </h3>
-        <p className="text-green-800 leading-relaxed">
-          Hum samajhte hain ki scrap parts mein Fraud aur defective pieces ka sabse bada darr hota hai. Isiliye Car Scrap Hub par hum dispatch karne se pehle <span className="font-semibold text-green-950">WhatsApp Video Call</span> par aapko aur aapke mechanic ko gearbox ki shaft, gear engagement, aur casing inspection live dikhate hain.
-        </p>
-      </div>
-
-      {/* CTA Button */}
-      <div className="text-center my-10">
-        <a
-          href="https://wa.me/916395948240?text=Hi%20Car%20Scrap%20Hub,%20I%20want%20to%20check%20Swift/Dzire%20gearbox%20price"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg text-lg transition duration-200 transform hover:-translate-y-1"
-        >
-          📲 Check Swift / Dzire Gearbox Price on WhatsApp
-        </a>
-      </div>
-
-      {/* Internal Links to Model Pages */}
-      <hr className="my-8 border-gray-200" />
-      <h3 className="text-lg font-bold mb-3">Explore Maruti Spare Parts Range:</h3>
-      <div className="flex flex-wrap gap-3">
-        <Link href="/scrap-parts/maruti-swift" className="text-blue-600 underline hover:text-blue-800 font-medium">
-          Maruti Swift Scrap Parts
-        </Link>
-        <span>•</span>
-        <Link href="/scrap-parts/maruti-dzire" className="text-blue-600 underline hover:text-blue-800 font-medium">
-          Maruti Dzire Scrap Parts
-        </Link>
-        <span>•</span>
-        <Link href="/scrap-parts/maruti-ertiga" className="text-blue-600 underline hover:text-blue-800 font-medium">
-          Maruti Ertiga Scrap Parts
-        </Link>
-      </div>
-    </article>
+    </div>
   )
 }
