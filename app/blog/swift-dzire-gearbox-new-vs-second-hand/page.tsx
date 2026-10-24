@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function GearboxComparisonBlog() {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+    <article className="max-w-4xl mx-auto px-4 py-8 text-gray-800 bg-white">
       {/* Blog Heading */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 leading-tight">
         Maruti Swift & Dzire Gearbox: New Showroom vs Original Second-Hand Comparison & Price Guide
@@ -29,7 +29,7 @@ export default function GearboxComparisonBlog() {
 
       {/* Intro Section */}
       <p className="text-lg leading-relaxed mb-6">
-        Agar aapki **Maruti Swift** ya **Swift Dzire** ke gearbox mein noise, gear slipping ya hard gear shifting ki problem aa rahi hai, toh aapke dimaag mein sabse pehla sawaal yahi aata hai: **"Kya showroom se ₹45,000+ ka naya gearbox khareedu ya original second-hand / scrap gearbox lagau?"**
+        Agar aapki <span className="font-semibold text-slate-900">Maruti Swift</span> ya <span className="font-semibold text-slate-900">Swift Dzire</span> ke gearbox mein noise, gear slipping ya hard gear shifting ki problem aa rahi hai, toh aapke dimaag mein sabse pehla sawaal yahi aata hai: <span className="font-semibold text-slate-900">&quot;Kya showroom se ₹45,000+ ka naya gearbox khareedu ya original second-hand / scrap gearbox lagau?&quot;</span>
       </p>
 
       {/* 🖼️ Main Featured Image Section */}
@@ -48,7 +48,7 @@ export default function GearboxComparisonBlog() {
       </div>
 
       <p className="text-base leading-relaxed mb-8">
-        Is detailed guide mein hum Showroom New Parts aur **Car Scrap Hub** ke original dismantled second-hand gearboxes ka direct price, quality aur durability comparison karenge.
+        Is detailed guide mein hum Showroom New Parts aur <span className="font-semibold text-slate-900">Car Scrap Hub</span> ke original dismantled second-hand gearboxes ka direct price, quality aur durability comparison karenge.
       </p>
 
       {/* Quick Comparison Table */}
@@ -100,7 +100,7 @@ export default function GearboxComparisonBlog() {
         1. 70% Cost Savings Without Quality Compromise
       </h2>
       <p className="leading-relaxed mb-6">
-        Maruti Swift aur Dzire (Petrol & Diesel K-Series / DDiS) ke new showroom gearboxes standard tax aur labor costs ke sath ₹50,000 tak pahunch jate hain. **Mayapuri scrap market** aur regional dismantling yards se hum jo gearboxes late hain, woh accident-claim ya low-kilometer running cars se nikale jate hain. Inka original internal gear teeth, synchronizer rings, aur casing 100% genuine Maruti OEM hoti hai.
+        Maruti Swift aur Dzire (Petrol & Diesel K-Series / DDiS) ke new showroom gearboxes standard tax aur labor costs ke sath ₹50,000 tak pahunch jate hain. <span className="font-semibold text-slate-900">Mayapuri scrap market</span> aur regional dismantling yards se hum jo gearboxes late hain, woh accident-claim ya low-kilometer running cars se nikale jate hain. Inka original internal gear teeth, synchronizer rings, aur casing 100% genuine Maruti OEM hoti hai.
       </p>
 
       {/* 🖼️ Secondary Image Section */}
@@ -122,7 +122,7 @@ export default function GearboxComparisonBlog() {
         2. Local Aftermarket Duplicate Parts vs Original Used Gearbox
       </h2>
       <p className="leading-relaxed mb-6">
-        Bohot se local mechanics saste ke chakkar mein duplicate aftermarket gear parts recommend karte hain. Unki fitting aur hardening proper nahi hoti, jisse 2-3 mahine mein gearbox noise dobara shuru ho jati hai. Usse lakh guna behtar hai ki aap original Maruti factory-assembled **second hand gearbox** lagayein jo saalon-saal bina noise ke chalta hai.
+        Bohot se local mechanics saste ke chakkar mein duplicate aftermarket gear parts recommend karte hain. Unki fitting aur hardening proper nahi hoti, jisse 2-3 mahine mein gearbox noise dobara shuru ho jati hai. Usse lakh guna behtar hai ki aap original Maruti factory-assembled <span className="font-semibold text-slate-900">second hand gearbox</span> lagayein jo saalon-saal bina noise ke chalta hai.
       </p>
 
       {/* Deep Dive Section 3 (Trust Factor) */}
@@ -131,14 +131,14 @@ export default function GearboxComparisonBlog() {
           <span>🤝</span> Zero-Risk Guarantee: Live Video Testing Before Payment
         </h3>
         <p className="text-green-800 leading-relaxed">
-          Hum samajhte hain ki scrap parts mein Fraud aur defective pieces ka sabse bada darr hota hai. Isiliye Car Scrap Hub par hum dispatch karne se pehle **WhatsApp Video Call** par aapko aur aapke mechanic ko gearbox ki shaft, gear engagement, aur casing inspection live dikhate hain.
+          Hum samajhte hain ki scrap parts mein Fraud aur defective pieces ka sabse bada darr hota hai. Isiliye Car Scrap Hub par hum dispatch karne se pehle <span className="font-semibold text-green-950">WhatsApp Video Call</span> par aapko aur aapke mechanic ko gearbox ki shaft, gear engagement, aur casing inspection live dikhate hain.
         </p>
       </div>
 
       {/* CTA Button */}
       <div className="text-center my-10">
         <a
-          href="https://wa.me/91XXXXXXXXXX?text=Hi%20Car%20Scrap%20Hub,%20I%20want%20to%20check%20Swift/Dzire%20gearbox%20price"
+          href="https://wa.me/916395948240?text=Hi%20Car%20Scrap%20Hub,%20I%20want%20to%20check%20Swift/Dzire%20gearbox%20price"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl shadow-lg text-lg transition duration-200 transform hover:-translate-y-1"
