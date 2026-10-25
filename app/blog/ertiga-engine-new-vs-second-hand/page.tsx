@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Maruti Ertiga engine price',
     'Ertiga second hand engine cost',
     'Ertiga diesel engine assembly price',
-    ' Ertiga scrap engine Delhi NCR',
+    'Ertiga scrap engine Delhi NCR',
     'Car Scrap Hub Ertiga parts'
   ],
   openGraph: {
@@ -29,7 +29,7 @@ export default function ErtigaEngineBlog() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       {/* Top Banner */}
-      <div className="bg-navy-900 bg-slate-900 text-yellow-400 py-3 px-4 text-center font-bold text-sm md:text-base shadow-md">
+      <div className="bg-slate-900 text-yellow-400 py-3 px-4 text-center font-bold text-sm md:text-base shadow-md">
         💡 ERTIGA SAVINGS CALCULATOR: Save Up To 65% On Ertiga Petrol & Diesel Engine Replacement!
       </div>
 
@@ -115,22 +115,6 @@ export default function ErtigaEngineBlog() {
                 </tr>
               </tbody>
             </table>
-          </div>
-
-          {/* Scrap Yard Visual Proof Section */}
-          <div className="mb-8 bg-gray-100 p-4 rounded-xl border border-gray-200 text-center">
-            <div className="relative w-full h-64 md:h-80 mb-3 rounded-lg overflow-hidden shadow-inner">
-              <Image 
-                src="/blog/ertiga-engine-inspection.jpg" 
-                alt="Car Scrap Hub Yard Ertiga Engine Testing" 
-                fill 
-                style={{ objectFit: 'cover' }}
-                className="rounded-lg"
-              />
-            </div>
-            <p className="text-xs md:text-sm text-gray-600 font-medium">
-              📸 Scrap Yard Inspection: Ertiga Engine Compression, Fuel Injector & Turbo Health Check
-            </p>
           </div>
 
           {/* Why Choose Scrap Engine */}
