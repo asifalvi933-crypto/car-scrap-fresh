@@ -20,7 +20,7 @@ export default function Home() {
       price: '₹18,500',
       condition: '42,000 km Tested',
       videoProof: true,
-      image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&auto=format&fit=crop&q=60',
+      image: '/blog/maruti-swift-vvt-engine-assembly.jpg',
       description: '100% Original tested engine with complete wiring and compression test video proof.'
     },
     {
@@ -32,7 +32,7 @@ export default function Home() {
       price: '₹4,200',
       condition: 'Original OEM Paint',
       videoProof: true,
-      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop&q=60',
+      image: '/blog/car-scrap-hub-yard-engine-stock.jpg',
       description: 'Zero clip damage, minor surface scratches. Original factory paint.'
     },
     {
@@ -44,7 +44,7 @@ export default function Home() {
       price: '₹9,800',
       condition: 'Scratchless Glass',
       videoProof: true,
-      image: 'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&auto=format&fit=crop&q=60',
+      image: '/blog/maruti-suzuki-tested-engine-front-view.jpg',
       description: 'Original factory fitted LED headlight assembly. Tested matrix bulbs.'
     }
   ]
@@ -105,6 +105,56 @@ export default function Home() {
             onChange={(e) => setSearchQuery(e.target.value)}
             style={{ width: '100%', padding: '14px 20px', borderRadius: '10px', border: '1px solid #334155', backgroundColor: '#0f172a', color: '#ffffff', fontSize: '15px', outline: 'none' }}
           />
+        </div>
+      </div>
+
+      {/* 🌟 NEW: Real Yard & Engine Photo Showcase Section (Trust Builder) */}
+      <div style={{ maxWidth: '1000px', margin: '30px auto', padding: '0 20px' }}>
+        <div style={{ backgroundColor: '#1e293b', border: '1px solid #334155', borderRadius: '16px', padding: '24px', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '20px', fontWeight: 'bold', color: '#38bdf8', marginBottom: '8px' }}>
+            📸 Live Yard Stock &amp; Tested Engine Assemblies
+          </h3>
+          <p style={{ fontSize: '14px', color: '#94a3b8', marginBottom: '20px' }}>
+            Direct Delhi NCR &amp; Moradabad yard se 100% original tested parts. Dispatch se pehle WhatsApp par live video proof dekhein.
+          </p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+            <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
+              <img 
+                src="/blog/maruti-swift-vvt-engine-assembly.jpg" 
+                alt="Maruti Swift VVT Engine Assembly" 
+                style={{ width: '1005', height: '160px', objectFit: 'cover', display: 'block' }} 
+              />
+              <div style={{ padding: '8px', fontSize: '12px', background: '#0f172a', color: '#cbd5e1' }}>Swift VVT Engine Assembly</div>
+            </div>
+            
+            <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
+              <img 
+                src="/blog/car-scrap-hub-yard-engine-stock.jpg" 
+                alt="Car Scrap Hub Yard Stock" 
+                style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
+              />
+              <div style={{ padding: '8px', fontSize: '12px', background: '#0f172a', color: '#cbd5e1' }}>Yard Stock View</div>
+            </div>
+
+            <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
+              <img 
+                src="/blog/maruti-suzuki-tested-engine-front-view.jpg" 
+                alt="Maruti Tested Engine Front View" 
+                style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
+              />
+              <div style={{ padding: '8px', fontSize: '12px', background: '#0f172a', color: '#cbd5e1' }}>Tested Engine Front View</div>
+            </div>
+
+            <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
+              <img 
+                src="/blog/maruti-second-hand-engine-delhi-ncr.jpg" 
+                alt="Scrap Engine Assemblies Yard" 
+                style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
+              />
+              <div style={{ padding: '8px', fontSize: '12px', background: '#0f172a', color: '#cbd5e1' }}>Delhi NCR Yard Stock</div>
+            </div>
+          </div>
         </div>
       </div>
 
