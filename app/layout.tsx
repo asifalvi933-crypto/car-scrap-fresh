@@ -1,5 +1,7 @@
 
 import type { Metadata } from 'next';
+import './globals.css'; // ⬅️ Bhai, yeh wali line add karni hai!
+
 
 export const metadata: Metadata = {
   title: 'Car Scrap Hub | Buy Original Second-Hand Auto Spare Parts',
