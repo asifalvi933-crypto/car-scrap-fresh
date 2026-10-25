@@ -20,7 +20,7 @@ export default function Home() {
       price: '₹18,500',
       condition: '42,000 km Tested',
       videoProof: true,
-      image: '/images/maruti-swift-vvt-engine-assembly.jpg',
+      image: '/maruti-swift-vvt-engine-assembly.jpg',
       description: '100% Original tested engine with complete wiring and compression test video proof.'
     },
     {
@@ -32,7 +32,7 @@ export default function Home() {
       price: '₹4,200',
       condition: 'Original OEM Paint',
       videoProof: true,
-      image: '/images/car-scrap-hub-yard-engine-stock.jpg',
+      image: '/car-scrap-hub-yard-engine-stock.jpg',
       description: 'Zero clip damage, minor surface scratches. Original factory paint.'
     },
     {
@@ -44,7 +44,7 @@ export default function Home() {
       price: '₹9,800',
       condition: 'Scratchless Glass',
       videoProof: true,
-      image: '/images/maruti-suzuki-tested-engine-front-view.jpg',
+      image: '/maruti-suzuki-tested-engine-front-view.jpg',
       description: 'Original factory fitted LED headlight assembly. Tested matrix bulbs.'
     }
   ]
@@ -121,7 +121,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
             <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
               <img 
-                src="/images/maruti-swift-vvt-engine-assembly.jpg" 
+                src="/maruti-swift-vvt-engine-assembly.jpg" 
                 alt="Maruti Swift VVT Engine Assembly" 
                 style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
               />
@@ -130,7 +130,7 @@ export default function Home() {
             
             <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
               <img 
-                src="/images/car-scrap-hub-yard-engine-stock.jpg" 
+                src="/car-scrap-hub-yard-engine-stock.jpg" 
                 alt="Car Scrap Hub Yard Stock" 
                 style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
               />
@@ -139,7 +139,7 @@ export default function Home() {
 
             <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
               <img 
-                src="/images/maruti-suzuki-tested-engine-front-view.jpg" 
+                src="/maruti-suzuki-tested-engine-front-view.jpg" 
                 alt="Maruti Tested Engine Front View" 
                 style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
               />
@@ -148,7 +148,7 @@ export default function Home() {
 
             <div style={{ overflow: 'hidden', borderRadius: '10px', border: '1px solid #334155' }}>
               <img 
-                src="/images/maruti-second-hand-engine-delhi-ncr.jpg" 
+                src="/maruti-second-hand-engine-delhi-ncr.jpg" 
                 alt="Scrap Engine Assemblies Yard" 
                 style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }} 
               />
