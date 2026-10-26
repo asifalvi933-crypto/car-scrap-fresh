@@ -1,14 +1,11 @@
-
 import type { Metadata } from 'next';
 import './globals.css';
 
-
-
 export const metadata: Metadata = {
-  title: 'Car Scrap Hub | Buy Original Second-Hand Auto Spare Parts',
-  description: 'Verified second-hand car spare parts marketplace in Delhi NCR & UP.',
+  title: 'Car Scrap Hub | Buy Original Second-Hand Auto Spare Parts & Engines',
+  description: 'Verified second-hand car spare parts and tested engine assemblies marketplace in Delhi NCR & UP with live video verification.',
   verification: {
-    google: 'x6lcLJaRCxYS1JVZfZ4YA8N7-IXvmjlje6vH4U7zVuk',
+    google: 'x6lclJaRCxY51JVZfZ4YA8N7-IXvmjleVH4U7zVuk',
   },
 };
 
