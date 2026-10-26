@@ -1,1 +1,7 @@
-https://carscraphub.in/scrap-parts/maruti-brezza
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  trailingSlash: false,
+};
+
+module.exports = nextConfig;
