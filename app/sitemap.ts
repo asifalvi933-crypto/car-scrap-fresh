@@ -3,16 +3,19 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://carscraphub.in'
 
-  // Yahan aap apne static pages ki list rakh sakte hain
   const staticPages = [
     '',
     '/blog',
     '/blog/alto-engine-new-vs-second-hand',
     '/blog/vitara-brezza-engine-new-vs-second-hand',
     '/sambhal-car-scrap-market',
-    // Jaise-jaise aap naye pages banayein, unke path yahan add kar sakte hain
-    // '/bareilly-used-car-parts',
-    // '/moradabad-car-scrap-yard',
+    // Yeh saare 7 scrap-parts wale pages yahan add kar dein:
+    '/scrap-parts/maruti-brezza',
+    '/scrap-parts/maruti-ertiga',
+    '/scrap-parts/maruti-alto',
+    '/scrap-parts/maruti-dzire',
+    '/scrap-parts/maruti-wagonr',
+    '/scrap-parts/maruti-swift',
   ]
 
   const currentDate = new Date()
