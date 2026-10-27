@@ -6,10 +6,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     '',
     '/blog',
+    // Blog paths
     '/blog/alto-engine-new-vs-second-hand',
     '/blog/vitara-brezza-engine-new-vs-second-hand',
-    '/sambhal-car-scrap-market',
-    // Yeh saare 7 scrap-parts wale pages yahan add kar dein:
+    '/blog/ertiga-engine-new-vs-second-hand',
+    '/blog/scorpio-bolero-engine-parts',
+    '/blog/swift-dzire-gearbox-new-vs-second-hand',
+    '/blog/swift-engine-guide',
+    '/blog/wagonr-engine-new-vs-second-hand',
+    
+    // Scrap parts wale 7 pages
     '/scrap-parts/maruti-brezza',
     '/scrap-parts/maruti-ertiga',
     '/scrap-parts/maruti-alto',
