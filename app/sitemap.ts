@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/swift-dzire-gearbox-new-vs-second-hand',
     '/blog/swift-engine-guide',
     '/blog/wagonr-engine-new-vs-second-hand',
+    '/blog/wagonr-vs-baleno-spare-parts-compatibility',
     
     // Scrap parts wale 7 pages
     '/scrap-parts/maruti-brezza',
